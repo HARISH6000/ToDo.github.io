@@ -2,6 +2,18 @@
 document.addEventListener("DOMContentLoaded", function(){
     var Amadeus=document.getElementById("Amadeus");
     var frm2=document.getElementById("frm2");
+    var upass =document.getElementById("upass");
+
+    upass.addEventListener("keydown", function(event){
+        if(event.key==="Enter"){
+            event.preventDefault();
+            if (upass.value) {
+                window.location.href = "pages/todo.html"; 
+            } else {
+                alert("Please enter a password."); 
+            }
+        }
+    });
 
     Amadeus.addEventListener("click",function(){
         /*if(frm2.style.display !="block"){
@@ -11,8 +23,12 @@ document.addEventListener("DOMContentLoaded", function(){
             frm2.style.display="none";
         }*/
         frm2.style.display="block";
+        /*subbut.style.display="block";*/
     });
 });
+
+
+//form
 
 
 // uname 

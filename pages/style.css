@@ -1,0 +1,76 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font: 1em Courier;
+    background-color: black;
+}
+
+h1, h2, h3{
+    padding: 10px;
+    color: silver;
+}
+
+#Amadeus{
+    position: fixed;
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+    width: 250px ;
+}
+
+p{
+    color: silver;
+}
+
+.sidebar {
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    width: 250px;
+    background-color: #000000;
+    position: fixed;
+    top: 76px;
+    height: 85%;
+    overflow: auto;
+    border-top: 0px solid black;
+    box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+}
+
+.sidebar a {
+    display: block;
+    color: silver;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+.sidebar a.active {
+    background-color: #555;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #888888;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    width: 82%;
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 260px;
+    height: 95.5%;
+    overflow: auto;
+    border-top: 0px solid black;
+    box-shadow: 0px 0px 3px 0px rgba(107,107,107,1);
+}
